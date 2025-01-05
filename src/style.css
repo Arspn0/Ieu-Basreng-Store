@@ -1,4 +1,88 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.background-img {
+    background-image: url('/img/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    filter: blur(8px); /* Blur lebih tinggi */
+    position: fixed; /* Pastikan tetap di belakang konten lainnya */
+    width: 100%;
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky; /* Navbar tetap di atas */
+    top: 0;
+    z-index: 10;
+}
+
+.logo-and-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-buttons button {
+    background: transparent; /* Transparan */
+    border: none;
+    font-size: 18px;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-buttons button:hover {
+    color: whitesmoke;
+}
+
+.nav-buttons button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: whitesmoke;
+    transition: width 0.3s ease-in-out; /* Animasi smooth */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-buttons button:hover::after {
+    width: 100%; /* Garis muncul penuh saat hover */
+}
+
+main{
+    padding: 30px 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.beranda{
+    border: black solid 1px;
 }
