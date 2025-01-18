@@ -328,6 +328,7 @@ header.sticky{
     background: var(--main-color);
     color: var(--bg-color);
     box-shadow: #ff9f0d 0px 1px 25px;
+    cursor: pointer;
 }
 
 .top-icon{
