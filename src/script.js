@@ -45,3 +45,21 @@ sr.reveal('.middle-text',{});
 sr.reveal('.row-btn,.shop-content',{delay:300});
 
 sr.reveal('.review-content,.contact',{delay:300});
+
+const menuItems = [
+    { 
+        name: 'Basreng Original', 
+        price: 10000, 
+        image: '/img/basreng1.png' 
+    },
+    { 
+        name: 'Basreng Seuhah', 
+        price: 15000, 
+        image: '/img/basreng1.png' 
+    },
+    { 
+        name: 'Basreng Chili Oil', 
+        price: 20000, 
+        image: '/img/basreng1.png' 
+    }
+];
